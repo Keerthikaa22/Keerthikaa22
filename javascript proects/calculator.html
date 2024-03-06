@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> calculator</title>
+    <style>
+      body{
+        text-align: center;
+      }
+      button{
+        background-color: orange;
+        color: black;
+        box-sizing: border-box;
+        height: 30px;
+        width: 35px;
+        border-radius: 10px;
+      }
+      .clear{
+        background-color: orange;
+        color: black;
+        box-sizing: border-box;
+        height: 30px;
+        width: 50px;
+        border-radius: 10px;
+      }
+      .button-cal{
+        background-color: orange;
+        color: black;
+        box-sizing: border-box;
+        height: 30px;
+        width: 100px;
+        border-radius: 10px;
+      }
+      
+    </style>
+    
+  </head>
+  <body>
+    <h3>CALCULATOR</h3>
+    <button onclick="
+      calculation += '1';
+      document.getElementById('cal').innerHTML = calculation;
+      ">1</button>
+
+    <button onclick="
+     calculation += '2';
+     document.getElementById('cal').innerHTML = calculation;
+    ">2</button>
+
+    <button onclick="
+     calculation += '3';
+     document.getElementById('cal').innerHTML = calculation;
+    ">3</button>
+
+    <button onclick="
+    calculation += '+';
+    document.getElementById('cal').innerHTML = calculation;
+    ">+</button> <br><br>
+
+    <button onclick="
+      calculation += '4';
+      document.getElementById('cal').innerHTML = calculation;
+      ">4</button>
+
+    <button onclick="
+     calculation += '5';
+     document.getElementById('cal').innerHTML = calculation;
+    ">5</button>
+
+    <button onclick="
+     calculation += '6';
+     document.getElementById('cal').innerHTML = calculation;
+    ">6</button>
+
+    <button onclick="
+    calculation += '-';
+    document.getElementById('cal').innerHTML = calculation;
+    ">-</button><br><br>
+
+    <button onclick="
+      calculation += '7';
+      document.getElementById('cal').innerHTML = calculation;
+      ">7</button>
+
+    <button onclick="
+     calculation += '8';
+     document.getElementById('cal').innerHTML = calculation;
+    ">8</button>
+
+    <button onclick="
+     calculation += '9';
+     document.getElementById('cal').innerHTML = calculation;
+    ">9</button>
+
+    <button onclick="
+    calculation += '*';
+    document.getElementById('cal').innerHTML = calculation;
+    ">*</button> <br><br>
+
+    <button onclick="
+      calculation += '0';
+      document.getElementById('cal').innerHTML = calculation;
+      ">0</button>
+
+    <button onclick="
+     calculation += '.';
+     document.getElementById('cal').innerHTML = calculation;
+    ">.</button>
+
+    <button onclick="
+     calculation += '/';
+     document.getElementById('cal').innerHTML = calculation;
+    ">/</button>
+
+    <button onclick="
+     calculation  =eval(calculation);
+     document.getElementById('cal').innerHTML = calculation;
+   ">=</button><br><br>
+        <button  onclick="
+        calculation = '';
+        document.getElementById('cal').innerHTML = calculation;
+       " class="clear">Clear</button>
+
+       <button id="cal" class="button-cal"> </button>
+
+    <script>
+      let calculation = '';
+      document.getElementById("cal").innerHTML = calculation;
+    </script>
+
+  </body>
+</html>
+
+
